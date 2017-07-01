@@ -1,0 +1,26 @@
+<?xml version="1.0"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+
+<xs:element name="person">
+  <xs:complexType>
+    <xs:sequence>
+	  <xs:element name="dateOfBirth" type="xs:date"/>
+      <xs:element name="firstName" type="xs:string"/>
+      <xs:element name="hourlyWage" type="xs:decimal"/>
+      <xs:element name="lastName" type="xs:string"/>
+	  <!--a member of staff can only have one of 3 of the positions defined below-->
+      <xs:element name="position">
+		  <xs:simpleType>
+			  <xs:restriction base="xs:string">
+				  <xs:pattern value="Manager|Cleaner|Bartender"/>
+			  </xs:restriction>
+		  </xs:simpleType>
+	  </xs:element>
+    </xs:sequence>
+      <xs:attribute name="staffID" type="xs:positiveInteger" use = "required"/>
+	  <xs:attribute name="sVenueID" type="xs:positiveInteger" use = "required"/>
+	  <xs:attribute name="managerID" type="xs:positiveInteger" use = "required"/>
+  </xs:complexType>
+</xs:element>
+
+</xs:schema> 

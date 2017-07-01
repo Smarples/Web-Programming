@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<?xml-stylesheet type="text/xsl" href="xslStyleSheets.xsl"?> 
+<!DOCTYPE staff [
+	<!ELEMENT staff (person+)>
+	<!ELEMENT person (dateOfBirth, firstName+, hourlyWage, lastName , position)>
+	<!ELEMENT dateOfBirth (#PCDATA)>
+	<!ELEMENT firstName (#PCDATA)>
+	<!ELEMENT hourlyWage (#PCDATA)>
+	<!ELEMENT lastName (#PCDATA)>
+	<!ELEMENT position (#PCDATA)>
+	
+	<!ATTLIST person staffID CDATA #REQUIRED>
+	<!ATTLIST person sVenueID CDATA #REQUIRED>
+	<!ATTLIST person managerID CDATA #REQUIRED>
+]>
+<staff>
+  <person staffID="1" sVenueID="3">	
+	<dateOfBirth>1989-02-29</dateOfBirth>
+	<firstName>Daniel</firstName>
+	<hourlyWage>17.89</hourlyWage>
+	<lastName>Radclife</lastName>	
+	<position>Manager</position>
+  </person>
+  <person staffID="6" managerID="1" sVenueID="3">	
+	<dateOfBirth>1996-06-06</dateOfBirth>
+	<firstName>Ali</firstName>
+	<hourlyWage>6.69</hourlyWage>
+	<lastName>Isbent</lastName>	
+	<position>Cleaner</position>
+  </person>
+  <person staffID="4" managerID="1" sVenueID="3">	
+	<dateOfBirth>1984-12-17</dateOfBirth>
+	<firstName>Felicity</firstName>
+	<hourlyWage>7.89</hourlyWage>
+	<lastName>Day</lastName>	
+	<position>Bartender</position>
+  </person>
+  <person staffID="5" managerID="1" sVenueID="3">	
+	<dateOfBirth>1990-06-19</dateOfBirth>
+	<firstName>Maria</firstName>
+	<hourlyWage>3.45</hourlyWage>
+	<lastName>Sanchez</lastName>	
+	<position>Cleaner</position>
+  </person>
+  <person staffID="2" sVenueID="1">	
+	<dateOfBirth>1972-02-02</dateOfBirth>
+	<firstName>Zach</firstName>
+	<hourlyWage>16.25</hourlyWage>
+	<lastName>Braff</lastName>	
+	<position>Manager</position>
+  </person>
+  <person staffID="3" managerID="2" sVenueID="1">	
+	<dateOfBirth>1986-01-05</dateOfBirth>
+	<firstName>Raphael</firstName>
+	<hourlyWage>8.99</hourlyWage>
+	<lastName>Lorenzo</lastName>	
+	<position>Bartender</position>
+  </person>
+  <person staffID="7" managerID="2" sVenueID="1">	
+	<dateOfBirth>1978-11-12</dateOfBirth>
+	<firstName>Gary</firstName>
+	<hourlyWage>6.70</hourlyWage>
+	<lastName>Alleso</lastName>	
+	<position>Cleaner</position>
+  </person>
+  <person staffID="8" sVenueID="2">	
+	<dateOfBirth>1992-05-28</dateOfBirth>
+	<firstName>Husnain</firstName>
+	<hourlyWage>19.99</hourlyWage>
+	<lastName>Sultan</lastName>	
+	<position>Manager</position>
+  </person>
+  <person staffID="9" managerID="8" sVenueID="2">	
+	<dateOfBirth>1909-09-09</dateOfBirth>
+	<firstName>Margeret</firstName>
+	<hourlyWage>1.99</hourlyWage>
+	<lastName>Thatcher</lastName>	
+	<position>Cleaner</position>
+  </person>
+  <person staffID="10" managerID="8" sVenueID="2">	
+	<dateOfBirth>1991-11-11</dateOfBirth>
+	<firstName>Kate</firstName>
+	<hourlyWage>5.89</hourlyWage>
+	<lastName>Winfrey</lastName>	
+	<position>Bartender</position>
+  </person>
+  <person staffID="11" managerID="8" sVenueID="2">	
+	<dateOfBirth>1983-12-31</dateOfBirth>
+	<firstName>Eminem</firstName>
+	<hourlyWage>8.99</hourlyWage>
+	<lastName>Marshal</lastName>	
+	<position>Bartender</position>
+  </person>
+</staff>
+
+
+	

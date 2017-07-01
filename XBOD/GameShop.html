@@ -1,0 +1,31 @@
+
+<html> 
+<head><title>Online Game Shop</title>
+<body>
+<h1> Sign In</h1>
+<div>
+    <label>Username:</label>
+    <input type="text" />
+</div>
+
+<div>
+    <label>Password:</label>
+    <input type="text" />
+</div>
+<?php
+//display all errors
+error_reporting(E_ALL);
+ini_set('display_errors', 1);
+//start session
+session_start();
+//store username and password for later
+$_SESSION['username'] = $_POST['username'];
+$_SESSION['password'] = $_POST['password'];
+?> 
+<form action="file:///home/cs1/sm861/public_html/GamePage.html">
+    <input type="submit" value="Sign in">
+</form>
+Hello, today is <?php echo date('l, F jS, Y'); ?>.
+</body>
+</head>
+</html>

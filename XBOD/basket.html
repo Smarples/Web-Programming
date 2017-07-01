@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+ <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<link rel="stylesheet" type="text/css" href="general.css">
+     <meta charset="utf-8" />
+
+<link rel="shortcut icon" href="favicon.ico" />		 
+<title>XBOD </title>
+     <h1> Your Basket </h1>
+
+<head>
+
+<script type="text/javascript">
+
+
+function checkData() {
+    var fname = document.my.fname.value
+    if ( fname.length < 2 || (/[^A-Za-z\ \-]/).test(fname) ) {
+      alert("Please enter first name")
+      return false
+    }
+    var lname = document.my.lname.value
+    if ( lname.length < 2 || (/[^A-Za-z\ \-]/).test(lname) ) {
+      alert("Please enter a last name")
+      return false
+    }
+    var address = document.my.address.value
+    if ( address.length < 2 || (/[^A-Za-z\ \-1234567890@]/).test(address) ) {
+      alert("Please enter an address")
+      return false
+    }
+var city = document.my.city.value
+    if ( city.length < 2 || (/[^A-Za-z\ \-1234567890@]/).test(city) ) {
+      alert("Please enter your city")
+      return false
+    }
+var postcode = document.my.postcode.value
+    if ( postcode.length < 2 || (/[^A-Za-z\ \-1234567890@]/).test(postcode) ) {
+      alert("Please enter your postcode")
+      return false
+    }
+    var email = document.my.email.value
+    if ( email.length < 2  || (/[^A-Za-z\ \-1234567890@.]/).test(email) ) {
+      alert("Please enter your email address")
+      return false
+    }
+var games = document.my.games.value
+var consoles = document.my.consoles.value
+var misc = document.my.misc.value
+if(games == "None" && consoles == "None" && misc == "None"){
+      alert("Please select something to purchase")
+return false 
+}
+
+    return true
+   }
+</script>
+</head>
+
+<body>
+<form name="my" onSubmit="return checkData()" method="POST" action="http://www2.macs.hw.ac.uk/cgi-bin/cgiwrap/djg30/Test"> 
+  <p>
+    First Name: <input name="fname" id ="fname" size="15">
+  </p>
+ <p>
+    Last Name: <input name="lname" id ="lname" size="15">
+  </p>
+ <p>
+    Address: <input name="address" id ="address" size="15">
+  </p>
+<p>
+    City: <input name="city" id ="city" size="15">
+  </p>
+<p>
+    Postcode: <input name="postcode" id ="postcode" size="15">
+  </p>
+ <p>
+    Email Address: <input name="email" id ="email" size="15">
+<p>
+<select name = "games" id = "games">
+<option value = "None" Selected> None</option>
+<option value = "Destiny"> Destiny</option>
+<option value = "RYSE: Son of Rome"> RYSE: Son of Rome</option>
+<option value = "FIFA 15"> FIFA 15</option>
+<option value = "Titanfall"> Titanfall</option>
+<option value = "Watch Dogs"> Watch Dogs</option>
+</select>
+
+<select name = "consoles" id = "consoles">
+<option value = "None" Selected> None</option>
+<option value = "Xbox One with Kinect"> Xbox One with Kinect</option>
+<option value = "Xbox One without Kinect"> Xbox One without Kinect</option>
+</select>
+
+<select name = "misc" id = "misc">
+<option value = "None" Selected> None</option>
+<option value = "Wireless Controller"> Wireless Controller</option>
+<option value = "Wired Headset"> Wired Headset</option>
+<option value = "Play and Plug"> Play and Plug</option>
+</select>
+
+</p>
+
+<p>
+</p>
+
+
+    <input id="save" type="submit" value="Purchase"> 
+
+
+</form>
+  </body>	 
+
+	 
+<div id="sidebarDiv">
+   <div id="content">
+		<a href="home.html"><img src="homeb.png" alt="Home Button" /></a><p></p>
+		<a href="games.html">Games</a><p></p>
+		<a href="consoles.html">Consoles</a><p></p>
+		<a href="misc.html">Miscellaneous</a><p></p>
+		<a href="about.html">About Us</a><p></p>
+		<a href="basket.html">Basket</a>
+</div>
+</div>
+
+</html>

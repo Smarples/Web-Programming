@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!DOCTYPE staff [
+	<!ELEMENT staff (person+)>
+	<!ELEMENT person (dateOfBirth, firstName+, hourlyWage, lastName , position)>
+	<!ELEMENT dateOfBirth (#PCDATA)>
+	<!ELEMENT firstName (#PCDATA)>
+	<!ELEMENT hourlyWage (#PCDATA)>
+	<!ELEMENT lastName (#PCDATA)>
+	<!ELEMENT position (#PCDATA)>
+	
+	<!ATTLIST person staffID CDATA #REQUIRED>
+	<!ATTLIST person sVenueID CDATA #REQUIRED>
+	<!ATTLIST person managerID CDATA #REQUIRED>
+]>

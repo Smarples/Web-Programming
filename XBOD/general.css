@@ -1,0 +1,78 @@
+h1 {
+	text-align: center;
+	color: #33CC33;
+	font-size: 60px
+  }
+  
+table.items {
+	  text-align: left;
+	  font-family: calibri;
+     }
+			  
+body {  
+	  background-color: #E7E7E7;	
+	  font-family: calibri;
+	  font-size: 30px;
+	  text-align: center;
+	  margin-left: 250pt;
+     }
+
+
+.sidebarDiv {
+	      position: relative;
+	      min-height: 700px;
+	     }
+	
+div {
+	position: absolute;
+	left: 0px;
+	bottom: 0px;
+	top: 0px;
+	background-color: #BEEFBE;
+	text-align: center;
+	font-family: calibri;
+    }
+	
+a:link {
+		text-decoration: none;
+		COLOR: #727272;
+	   }
+	   
+a:hover{
+		 COLOR: #33CC33;
+	   }
+	   
+#showprice, #addbasket{
+			background-color: #33CC33;
+			border: none;
+			height: 50px;
+			width: 150px;
+			font-family: calibri;
+			font-size: 20px;
+		 }
+
+#showprice {
+			position: relative;
+			right: 100px;
+			}
+
+#addbasket{
+			position:relative;
+			left: 100px
+			}
+		
+#price{
+		position: relative;
+		right: 180px;
+		font-size: 20px;
+	  }
+
+
+
+
+
+
+
+
+
+
